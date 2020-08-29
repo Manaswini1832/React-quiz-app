@@ -1,0 +1,96 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --headFont: "Cuprum", sans-serif;
+  --btnFont: "Raleway", sans-serif;
+  --btnHoverColor: #bf4545;
+  --accent: #e35454;
+  --mainColor: #f4f5e4;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.card {
+  margin: 2rem;
+  padding: 2rem 1rem;
+  border: 1px solid #dbdbd7;
+  border-radius: 20px;
+}
+
+.question {
+  margin: 0.5rem auto;
+  font-family: var(--headFont);
+}
+
+.option1-div,
+.option2-div,
+.option3-div,
+.option4-div {
+  margin: 0.2rem;
+  font-family: var(--btnFont);
+}
+
+.options-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.check-input {
+  margin-right: 0.3rem;
+}
+
+.submit-btn-div {
+  width: 100vw;
+  padding: 2rem;
+  margin: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.quiz-submit-btn {
+  background-color: var(--accent);
+  color: #fff;
+  padding: 1rem 2rem;
+  border-style: none;
+  font-family: var(--btnFont);
+  text-decoration: none;
+  margin: 1rem;
+  border-radius: 8px;
+}
+
+.quiz-submit-btn:hover {
+  background-color: var(--btnHoverColor);
+  transform: scale(1.1);
+  transition: 0.2s;
+}
+
+.quiz-submit-btn:focus {
+  outline: none;
+}
+
+/*Styling the results part*/
+.results-div {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: var(--headFont);
+  text-align: center;
+  padding: 3rem;
+  background-color: var(--mainColor);
+}
+
+.resultNum {
+  text-decoration: underline;
+  text-decoration-color: var(--accent);
+}

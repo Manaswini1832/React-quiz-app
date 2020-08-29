@@ -1,0 +1,39 @@
+@import url("https://fonts.googleapis.com/css2?family=Cuprum:wght@700&family=Raleway:wght@300;400&display=swap");
+
+:root {
+  --headFont: "Cuprum", sans-serif;
+  --btnFont: "Raleway", sans-serif;
+  --btnHoverColor: #bf4545;
+  --accent: #e35454;
+  --mainColor: #f4f5e4;
+}
+
+.welcome-main-div {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--mainColor);
+}
+
+.welcome-heading {
+  font-family: var(--headFont);
+  font-size: 4rem;
+}
+
+.welcome-link {
+  background-color: var(--accent);
+  color: #fff;
+  padding: 1rem 2rem;
+  margin: 1rem;
+  font-family: var(--btnFont);
+  text-decoration: none;
+  border-radius: 8px;
+}
+
+.welcome-link:hover {
+  background-color: var(--btnHoverColor);
+  transform: scale(1.1);
+  transition: 0.2s;
+}
